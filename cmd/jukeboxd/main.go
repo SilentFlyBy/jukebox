@@ -1,4 +1,7 @@
 package main
 
-func main() {}
+import "github.com/SilentFlyBy/jukebox/api"
 
+func main() {
+	api.StartApiServer()
+}
