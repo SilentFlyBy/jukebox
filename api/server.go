@@ -30,7 +30,7 @@ func StartApiServer() {
 	r.Get("/cluster", func(w http.ResponseWriter, r *http.Request) {
 		c := cluster.Cluster{
 			ID:    id.NewID(),
-			Label: "",
+			Label: "default",
 		}
 		list := []cluster.Cluster{c}
 
